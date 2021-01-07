@@ -1,15 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+  <Selector />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Selector from './components/Selector.vue'
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Selector
+  },
+  data() {
+    return {
+      loadData: {}
+    }
+  },
+  mounted() {
+    console.log("App loaded");
+  },
+  methods: {
   }
 }
 </script>
