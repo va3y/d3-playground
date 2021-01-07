@@ -53,7 +53,7 @@ export default {
     getFactions(factions) {
       let faction = "";
       try {
-        faction = factions[0].name;
+        faction = factions[factions.length-1].name;
       } catch (error) {
         faction = "Член Совета Федерации";
       }
